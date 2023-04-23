@@ -1,0 +1,159 @@
+body {
+    background: linear-gradient(to bottom right, #9797fa, #5555df, #0038b2, #032879);
+
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+
+  }
+/* Style the navigation menu */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+}
+
+.navbar button {
+    background-color: transparent;
+    border: none;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+/* Style the sidebar toggle button */
+.toggle-btn {
+    display: none;
+    cursor: pointer;
+    font-size: 20px;
+    padding: 10px;
+    color: #fff;
+}
+
+/* Style the dashboard container */
+.dashboard {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin: 30px auto;
+    max-width: 600px;
+}
+
+/* Style the dashboard title */
+.dashboard-title {
+    padding-top: 20px;
+    font-size: 24px;
+    
+    margin: 0;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+/* Style the dashboard boxes */
+.dashboard-box {
+    background-color: #f5f5f5;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 2px 2px 5px #ccc;
+    margin: 10px;
+    padding: 20px;
+    width: calc(50% - 20px);
+    max-width: 300px;
+    text-align: center;
+}
+
+.dashboard-box h2 {
+    font-size: 24px;
+    margin-top: 0;
+}
+
+.dashboard-box p {
+    font-size: 18px;
+    margin-bottom: 0;
+}
+.addmo{
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  margin-top: 10px;
+  padding: 10px 20px;
+  background-color: #48c0f3;
+  border-radius: 5px;
+}
+.addmo:hover{
+    background-color: #71c9ef;
+    cursor: pointer;
+}
+.navbar-links a {
+    color: #fff;
+    padding: 10px;
+    font-size: 16px;
+    text-align: center;
+    text-decoration: none;
+}
+
+.navbar-links a:hover {
+    background-color: #444;
+}
+.log:hover{
+    text-decoration:underline;
+    text-align: center;
+
+}
+h1{
+    padding-left: 20px;
+}
+/* Add a responsive design for smaller screens */
+@media screen and (max-width: 800px) {
+    .dashboard-box {
+        width: calc(100% - 20px);
+    }
+
+    .toggle-btn {
+        display: block;
+    }
+
+    .navbar {
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px;
+        height: 60px;
+    }
+
+    .navbar button {
+        font-size: 16px;
+    }
+
+    .navbar-links {
+        display: none;
+        width: 100%;
+        background-color: #333;
+        color: #fff;
+        padding: 10px;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        z-index: 1;
+        
+    }
+
+    .navbar-links a {
+        display: block;
+        color: #fff;
+        padding: 10px;
+        font-size: 16px;
+        text-align: center;
+        text-decoration: none;
+    }
+
+    .navbar-links a:hover {
+        background-color: #444;
+    }
+
+    .navbar-links.show {
+        display: block;
+    }
+}

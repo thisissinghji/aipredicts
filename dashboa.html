@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/dashboa.css">
+</head>
+
+<body>
+    <section class="dashdash"> 
+    <div class="navbar">
+        <button class="toggle-btn">&#9776;</button>
+        <h1>Dashboard</h1>
+        <button class= "log">Logout</button>
+        <div class="navbar-links">
+            <a href="#">Dashboard</a>
+            <a href="#">Transactions</a>
+            <a href="#">Referrals</a>
+        </div>
+    </div>
+    <h2 class="dashboard-title">Customer Section</h2>
+    <div class="dashboard">
+        
+        <div class="dashboard-box">
+            <h2>User's Name</h2>
+            <p>John Doe</p>
+        </div>
+        <div class="dashboard-box">
+            <h2>Available Balance</h2>
+            <p>$1,000.00</p>
+            <button class="addmo">Add Money</button>
+        </div>
+        <div class="dashboard-box">
+            <h2>Available Bonus</h2>
+            <p>$100.00</p>
+        </div>
+        <div class="dashboard-box">
+            <h2>Number of Referrals</h2>
+            <p>5</p>
+        </div>
+    </div>
+</section>
+    <script>
+        /* Toggle the navbar links when the toggle button is clicked */
+        const navbarLinks = document.querySelector(".navbar-links");
+        const toggleBtn = document.querySelector(".toggle-btn");
+        toggleBtn.addEventListener("click", () => {
+            navbarLinks.classList.toggle("show");
+        });
+    </script>
+</body>
+
+</html>
